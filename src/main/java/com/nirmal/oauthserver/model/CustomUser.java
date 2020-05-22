@@ -3,13 +3,13 @@ package com.nirmal.oauthserver.model;
 import org.springframework.security.core.userdetails.User;
 
 public class CustomUser extends User {
-	private String id;
+	private int id;
 	private String name;
 	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -23,6 +23,6 @@ public class CustomUser extends User {
 	public CustomUser(UserEntity userEntity) {
 		super(userEntity.getEmailId(),userEntity.getPassword(),userEntity.getGrantedAuthoritiesList());
 		this.id = userEntity.getId();
-		this.name = userEntity.getName();
+		this.name = userEntity.getUserName();
 	}
 }

@@ -6,7 +6,17 @@ spring:
     url:  "jdbc:mysql://localhost:3306/pachakari?autoreconnect=true"
     password: "admin"
     username: "root"
-
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nirmalpm@gmail.com	
+    password: ramana$009
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 config:
   oauth2:
     clientid: oauth_client_id
@@ -16,3 +26,5 @@ config:
     privateKey: -----BEGIN RSA PRIVATE KEY-----MIIEpgIBAAKCAQEAzs9pcxexWIpLlD0AXa0CqZYzmTEBTxpQ5+zFd8LeomC4NsPAROroC/s4FosKYgBCWhlTpT9ljVOjeBmpypwbXoLBmnp44lpm3gbpW6pWMv3oX1GxRiNknjVvtZ8kRBcsFHjsefCnG6LaHv7ykr21mSbzglGhRIuv/oau95vfCqC3wr6H8WGmEkjYMy2nFHjrAyaHpUpd5M/KxWOtRqOCV0sfn8pw0/9xlYjDs0p0bVr9KqLR2GC9CqkgnryVuKdlvU3/AdtqWQT/wyjYTn5LUiRuVWHrGF312MhSmteRWTxIbZTO7R9zt8uZPD6HyfZkTGtoeoX7RbReid0bDw/fIwIDAQABAoIBAQCZW2jgtdMGyxaciFe7H054Hy+IC7TiyarxMLyFwHWDh6FSyvnKoT8Nk27WGKjMX1DUqy9BvK87i6gOqUklO3l4LhIO0X7OqybYwdtN5BQjn/Eurc99KUW1o/6AedBUxbIkRD9ndTMV5T9F+Nw8QH1nYmD0ZD/oKoWJgqpAZs+QeqKIzhe2agsbW7u4mqxRgNMHhx6mFUnjJw0FSlQ0teIk9rAd+uHlBvNAvIsZLDI92g8iesUQMkRbW7SAyuy/bX39WY8qiUkf9tOgsFQx2oRHjcNZvIQRrJOp+uCaTcD06llficakO65jIloYl2j0TWKipQAAIboe1RjgLLsug6sRAoGBAP6frdOuI9R+wFQ6vtiJVKFQxFenspRLFawNheNSQKRJxIwbF03ajj4E2NJdjLtUhN/ntYVVkISEs3y2CKt7nf2fmS0FGNiA7PzlJBPgGIolJBqaukNnPSAyY0jGouupnV5WvQnCztS0jPjQnvdCtrE/Xzsh3BEd703Bn9EU6M5FAoGBAM/tktsdVhr1Zx+DdMEkPIGIW2QlJKgbKQEZ9FkNOm2P0BDKm4RSc5IHAEP8ms0dMktBluZ90rb7WENUB7Hsvr7MBxP7DQkpX/BJDFEJMMgmXR5DuKkEs8k3GzQBqgFMZuK0WgzWcNiACF+R6V4WFg77mlP7+X9zIjtT+QB3C6JHAoGBAPsOoMtmGagM7kBeyAwjpJGGXIH9NORpAE5r6wbP9DLJFYX7tEesZrIZ/1u0p+2RkY5gHigAzQUM/xjJN9U1hvsrIVI1g2D+Bi35FVCPlkKoCmg9BckuAyQ66pA4Yy2wSR1asvvr3Bn4iENRGFy+p/oufQyF/0HVXT4y2wzB7CZtAoGBAL9Vu+S72ydVmT6Lhh3RDYiZBJhkAZZb3+CulIZ5wMFfLDS3bGJYSRcgMCNfyMdkzYoo4gZZ1FQjeDYElkwpMeF6+CxvwbAjjbAcWCQd0/DqNJgL81o9BH/toK+7tEgbmTWWhqL3lcH0F0BykY/NvSCucHZGEXIxbVewzxqZcXAzAoGBAIT1cjgJr07X+d7fAxxEZLAgQRUSFU7ihJx1iMA43h0kJIZDx0Xhk7mbhJWoDWIrU0iWJdOtyF7wNJ863TbjiLBLSVkUZJ4aHSnPxAQAeSfmOwzGQ2mX6BhONjqfwF4xNNPryj8q47026gdAVkxmp5fIqIKdC93HeToF3gEQi0aP-----END RSA PRIVATE KEY-----
     publicKey: -----BEGIN PUBLIC KEY-----  MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzs9pcxexWIpLlD0AXa0CqZYzmTEBTxpQ5+zFd8LeomC4NsPAROroC/s4FosKYgBCWhlTpT9ljVOjeBmpypwbXoLBmnp44lpm3gbpW6pWMv3oX1GxRiNknjVvtZ8kRBcsFHjsefCnG6LaHv7ykr21mSbzglGhRIuv/oau95vfCqC3wr6H8WGmEkjYMy2nFHjrAyaHpUpd5M/KxWOtRqOCV0sfn8pw0/9xlYjDs0p0bVr9KqLR2GC9CqkgnryVuKdlvU3/AdtqWQT/wyjYTn5LUiRuVWHrGF312MhSmteRWTxIbZTO7R9zt8uZPD6HyfZkTGtoeoX7RbReid0bDw/fIwIDAQAB-----END PUBLIC KEY-----
 
+
+  

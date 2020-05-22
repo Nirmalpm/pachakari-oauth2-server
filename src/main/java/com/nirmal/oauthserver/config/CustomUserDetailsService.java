@@ -21,7 +21,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 		UserEntity userEntity = null;
 		try {
 			userEntity = oAuthDAOService.getUserDetails(username);
-			if(userEntity != null && userEntity.getId() != null && !"".equalsIgnoreCase(userEntity.getId())) {
+			if(userEntity != null && userEntity.getId() != 0 ) {
 				CustomUser customUser = new CustomUser(userEntity);
 				return customUser;
 			}else {

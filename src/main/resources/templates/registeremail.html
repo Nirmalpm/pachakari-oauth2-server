@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p>
+      Hello,<span th:text="${name}"> Peter Static!</span>
+    </p>
+    
+    <p>
+      You have been successfully registered to pachakari on <span th:text="${user.createDate}">28-12-2012</span>
+    </p>
+    <p>
+    	Please click <a th:href="${url}">here</a> for completing the registration process.
+    </p>
+    <p>
+      <img src="sample.png" th:src="|cid:${imageResourceName}|" />
+    </p>
+    <p>
+      Regards, <br />
+      <em>Team Pachakari</em>
+    </p>
+  </body>
+</html>
